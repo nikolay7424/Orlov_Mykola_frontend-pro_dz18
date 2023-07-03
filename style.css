@@ -1,0 +1,70 @@
+#input {
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid rgb(197, 197, 197);
+}
+
+h2 {
+  margin-top: 5rem;
+}
+
+form {
+  position: relative;
+}
+
+.tooltip {
+  background: black;
+  color: white;
+  position: absolute;
+  top: -2.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  display: none;
+}
+
+.tooltip::after {
+  content: '';
+  position: absolute;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: black;
+  top: 2rem;
+  left: 0.5rem;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  transform: rotate(180deg);
+}
+
+.visible {
+  display: block;
+}
+
+.buttons {
+  display: flex;
+  gap: 2rem;
+}
+
+.btn {
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  background: rgb(51, 91, 164);
+  color: white;
+}
+
+.btn:hover {
+  background: rgb(31, 61, 116);
+}
+
+.btn:active {
+  background: rgb(45, 111, 235);
+  transform: scale(0.95);
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+td {
+  padding: 1rem;
+}
